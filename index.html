@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
 
   <!-- AOS ANIMATION -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -30,8 +30,8 @@
   <!-- START OF NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <span>&lt;LEE&gt;</span>
+      <a class="navbar-brand" href="#home-section">
+        <img src="./images/technology-3px.png" class="img-fluid" id="nav-img">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,19 +39,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item me-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home-section">Home</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" href="#project-section">Projects</a>
+            <a class="nav-link" href="#content-section">Projects</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" href="#">Tools</a>
+            <a class="nav-link" href="#tools-section">Tools</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" aria-current="page" href="#">About Me</a>
+            <a class="nav-link" aria-current="page" href="#aboutme-section">About Me</a>
           </li>
           <li class="nav-item me-2">
-            <a class="nav-link" aria-current="page" href="#">Contact</a>
+            <a class="nav-link" aria-current="page" href="#contact-section">Contact</a>
           </li>
         </ul>
       </div>
@@ -59,175 +59,306 @@
   </nav>
   <!-- END OF NAV BAR -->
 
-  <!-- MAIN CONTENT -->
+  <!-- PROFILE CONTENT -->
 
-  <div class="container">
-    <div class="row d-flex align-items-center mt-4">
-      <div class="col-md-4 offset-1" data-aos="fade-right">
-        <h1>I'm Leogie</h1>
-        <h4>Software Engineer / Full-stack Web Developer</h4>
-        <p>Specializing in building exceptional digital experiences.</p>
+  <div class="container" id="home-section">
+    <div class="row mt-4">
+      <div class="col-12 ps-3 col-md-6 pt-md-5 col-lg-5 offset-lg-1" data-aos="fade-right">
+        <div id="profile-welcome">I'm <span id="profile-name">Leogie</span></div>
+        <h4>Software Engineer</h4>
+        <h4>Full-stack Web Developer</h4>
+        <p>Specializing in building exceptional digital experiences. I design and code beautifully simple things, and I love what I do.</p>
 
-        <button class="btn btn-warning">Create an Appointment</button>
-        <button class="btn btn-link">About me</button>
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#appointmentModal">Create an Appointment</button>
+        <!-- <button class="btn btn-link text-dark">Contact me</button> -->
+        <a href="#contact-section" class="text-dark mx-2">Contact Me</a>
       </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <img src="./images/gordon_ramsay.webp" class="img-fluid">
+      <div class="col-12 col-md-6 col-lg-6 px-2 p-md-none" data-aos="fade-up">
+        <img src="./images/profile-pic.jpg" class="img-fluid" id="profile-picture">
+        <!-- <img src="./images/profile-pic-transparent-3.png" class="img-fluid" id="profile-picture"> -->
       </div>
     </div>
   </div>
 
-  <!-- END OF MAIN CONTENT -->
+  <!-- END OF PROFILE CONTENT -->
 
-  <!-- START OF PROJECTS -->
-  <div class="container-fluid bg-dark p-5 min-vh-100" id="project-section">
-    <h1 class="text-light text-center mb-5">
-      <span class="section-head">Projects</span></h1>
-    <div class="d-lg-flex justify-content-center pt-5">
-      <div class="card ms-4 me-4" data-aos="fade-left">
-        <img src="./images/Upload-pana.svg" class="card-img-top">
-        <div class="card-body">
-          <h4 class="text-center">E-Voto</h4>
-          <p>Web Online campus voting system</p>
-        </div>
-      </div>
-
-      <div class="card ms-4 me-4" data-aos="fade-down">
-        <img src="./images/Programming-pana.svg" class="card-img-top">
-        <div class="card-body">
-          Hello body
-        </div>
-      </div>
-
-      <div class="card ms-4 me-4" data-aos="fade-right">
-        <img src="./images/Seminar-pana.svg" class="card-img-top">
-        <div class="card-body">
-          Hello body
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- END OF PROJECTS -->
-
-  <!-- START OF TOOLS -->
-  <div class="container-fluid min-vh-100" data-aos="fade-up">
-    <div class="offset-1 pt-5 pb-5 mb-5">
-      <h1>Tools</h1>
-      <h4>Front End</h4>
-      <div class="tool-images">
-        <img width="150" src="images/html-5.png" class="img-fluid" />
-        <img width="150" src="images/logo-css3.png" class="img-fluid" />
-        <img width="150" src="images/bootstrap4.png" class="img-fluid" />
-        <img width="150" src="images/js.png" class="img-fluid" />
-      </div>
-
-      <h4>Back End</h4>
-      <div class="tool-images">
-        <img width="150" src="images/logo-mongodb.png" class="img-fluid" />
-        <img width="150" src="images/logo-nodejs.png" class="img-fluid" />
-        <img width="150" src="images/logo-expressjs.png" class="img-fluid" />
-        <img width="150" src="images/logo-react.png" class="img-fluid" />
-        <img width="150" src="images/logo-heroku.png" class="img-fluid" />
-      </div>
-
-      <h4>Other Tools</h4>
-      <div class="tool-images">
-        <img width="150" src="images/logo-git.png" class="img-fluid" />
-        <img width="150" src="images/logo-sublime-text-3.png" class="img-fluid" />
-        <img width="150" src="images/logo-postman.png" class="img-fluid" />
-        <img width="150" src="images/logo-gitlab-ci-cd.png" class="img-fluid" />
-      </div>
-
-    </div>
-  </div>
-  <!-- END OF TOOLS -->
-
-  <!-- START OF CONTACT FORM -->
-  <div class="container-fluid bg-dark pb-5" data-aos="fade-up">
-    <h1 class="text-light text-right pt-5 offset-1">Contact</h1>
-    <div class="row">
-      <div class="col-6 mt-5">
-        <div class="text-light offset-2">
-          <div>(02) 8 282 9520</div>
-          <div>0928 - 968 9653 (Globe)</div>
-          <div>0909 - 913 7670 (Smart)</div>
-          <div>marsolee09@gmail.com</div>
-        </div>
-
-        <div class="text-light offset-2 mt-5">
-          <div>Masaya St.</div>
-          <div>Block 24 Lot 8 Brgy B. Pulido</div>
-          <div>General Mariano Alvarez</div>
-          <div>Cavite 4117, Philippines</div>
-        </div>
-
-        <div class="text-light offset-2 mt-5">
-          <a href="#" class="text-light mx-4">
-            <i class="fa fa-facebook fa-2x"></i>
-          </a>
-          <a href="#" class="text-light mx-4">
-            <i class="fa fa-linkedin fa-2x"></i>
-          </a>
-        </div>
-
-        <div class="text-light offset-2 mt-1">
-          <a href="#" class="text-light mx-4">
-            <i class="fa fa-gitlab fa-2x"></i>
-          </a>
-          <a href="#" class="text-light mx-4">
-            <i class="fa fa-github fa-2x"></i>
-          </a>
-        </div>
-      </div>
-      <div class="col-5">
-        <div class="card">
-          <div class="card-body">
-            <form name="frmContact">
-              <div class="form-group pb-3 ps-2 pe-2">
-                <label class="pb-2">Full Name</label>
-                <input type="text" name="fullname" class="form-control">
-              </div>
-              <div class="form-group pb-3 ps-2 pe-2">
-                <label class="pb-2">Email</label>
-                <input type="text" name="email" class="form-control">
-              </div>
-              <div class="form-group pb-3 ps-2 pe-2">
-                <label class="pb-2">Contact Number</label>
-                <input type="text" name="contact" class="form-control">
-              </div>
-              <div class="form-group pb-3">
-                <label class="pb-2">Message</label>
-                <textarea rows="5" name="message" class="form-control"></textarea>
-              </div>
-              <button type="button" class="btn btn-dark btn-block">Submit</button>
-            </form>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for contacting us!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-dark">Message Successfully Sent</div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  </div>
-                </div>
+  <!-- START OF MAIN CONTENT -->
+  <div class="container-fluid p-5 min-vh-200 content-section" id="content-section">
+    
+    <div class="mt-2">
+      <div class="container min-vh-100" id="project-section">
+        <h1 class="text-center text-light"><span class="section-head">Projects</span></h1>
+        <p class="text-center text-light">Here are a few past projects I've worked. </p>
+        <div class="row mt-lg-5">
+          <div class="col-12 pb-2 col-md-6 col-lg-3">
+            <div class="card text-center" data-aos="fade-up" id="project-card">
+              <img src="./images/Business-ethics-pana.svg" class="img-fluid">
+              <div class="card-body">
+                <h4 class="text-center">Macedonian Saving</h4>
+                <p>Simplified Management Information System</p>
               </div>
             </div>
+          </div>
+          <div class="col-12 pb-2 col-md-6 col-lg-3">
+            <div class="card text-center" data-aos="fade-down" id="project-card">
+              <img src="./images/Programming-pana.svg" class="img-fluid">
+              <div class="card-body">
+                <h4 class="text-center">E-Voto</h4>
+                <p>Web-based Voting system</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-12 pb-2 col-md-6 col-lg-3">
+            <div class="card text-center" data-aos="fade-down" id="project-card">
+              <img src="./images/portfolio-pana.svg" class="img-fluid">
+              <div class="card-body">
+                <h4 class="text-center">My Portfolio</h4>
+                <!-- <p>Web Online campus voting system</p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 pb-2 col-md-6 col-lg-3">
+            <div class="card" data-aos="fade-up" id="project-card">
+              <img src="./images/Computer troubleshooting-amico.svg" class="img-fluid">
+              <div class="card-body">
+                <h4 class="text-center">Additional Project</h4>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr class="text-light">
+    <div class="mt-2 mb-5" id="tools-section">
+      <h1 class="offset-1 text-light">
+        <span class="section-head">Tools</span>
+      </h1>
+      <div class="container mt-5">
+        <div class="row text-container">
+          <div class="col-12 mb-1 text-light">
+            <div class="p-4" data-aos="flip-up">
+              <div class="row text-light" align="center">
+                <div class="col-12 mb-3 col-md-4 text-left">
+                  <img src="./images/ux-design-3.png" class="img-fluid text-center">
+                  <hr>
+                  <div>HTML5</div>
+                  <div>CSS3</div>
+                  <div>BOOTSTRAP 5</div>
+                  <div>JavaScript (ES6, Angular, AngularJS)</div>
+                </div>
+                <div class="col-12 mb-3 col-md-4">
+                  <img src="./images/programming.png" class="img-fluid">
+                  <hr>
+                  <div>ReactJS</div>
+                  <div>NodeJS</div>
+                  <div>ExpressJS</div>
+                  <div>MongoDB</div>
+                  <div>Python</div>
+                  <div>Visual FoxPro</div>
+                  <div>SQL/MySQL</div>
+                </div>
+                <div class="col-12 mb-3 col-md-4">
+                  <img src="./images/git.png" class="img-fluid">
+                  <hr>
+                  <div>Git</div>
+                  <div>Jira Atlasian</div>
+                  <div>Sublime</div>
+                  <div>VS Code</div>
+                  <div>Xampp</div>
+                  <div>Wampp</div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- END OF CONTACT FORM -->
+    <hr class="text-light">
+    <div class="mt-2 mb-5" id="aboutme-section">
+      <h1 class="offset-1 text-light">
+        <span class="section-head">About Me</span>
+      </h1>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 mb-1 col-md-5 col-lg-4 offset-lg-1">
+            <img src="./images/profile-pic-transparent-2.png" class="img-fluid" data-aos="flip-down">
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 text-light">
+            <div class="text-container p-4" data-aos="flip-up">
+              <p>Hello! My name is Leogie and I enjoy creating things that live on the internet. My interest in technology evolution started back in 2012 when I was amazed on how web and mobile application works. It turns my mind to envision crazy things and ideas that live on technology.</p>
+
+              <p>
+                I worked as a Software Engineer and currently focusing on Web Development.
+                I also like sharing content that I learned over the years so it can help people grow their ideas in technology. 
+                Feel free to connect or follow me to my social accounts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="text-light">
+
+    <!-- START OF CONTACT FORM -->
+    <div class="mt-3 mb-5" id="contact-section">
+      <h1 class="text-light text-right pt-5 offset-1">
+        <span class="section-head">Contact</span></h1>
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-5 offset-1 my-3 mt-md-5">
+          <div class="text-light" data-aos="zoom-in">
+            <div>(02) 8 282 9520</div>
+            <div>0928 - 968 9653 (Globe)</div>
+            <div>0909 - 913 7670 (Smart)</div>
+            <div>marsolee09@gmail.com</div>
+          </div>
+
+          <div class="text-light mt-5" data-aos="zoom-in">
+            <div>Masaya St.</div>
+            <div>Block 24 Lot 8 Brgy B. Pulido</div>
+            <div>General Mariano Alvarez</div>
+            <div>Cavite 4117, Philippines</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="card" data-aos="zoom-in">
+            <div class="card-body">
+              <form name="frmContact">
+                <div class="form-group pb-3 ps-2 pe-2">
+                  <label class="pb-2">Full Name</label>
+                  <input type="text" name="fullname" class="form-control">
+                </div>
+                <div class="form-group pb-3 ps-2 pe-2">
+                  <label class="pb-2">Email</label>
+                  <input type="text" name="email" class="form-control">
+                </div>
+                <div class="form-group pb-3 ps-2 pe-2">
+                  <label class="pb-2">Contact Number</label>
+                  <input type="text" name="contact" class="form-control">
+                </div>
+                <div class="form-group pb-3">
+                  <label class="pb-2">Message</label>
+                  <textarea rows="5" name="message" class="form-control"></textarea>
+                </div>
+                <button type="button" class="btn btn-dark btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF CONTACT FORM -->
+
+    <!-- START OF FOOTER -->
+    <div class="container-fluid mt-5 mb-0">
+      <div class="d-flex justify-content-center">
+        <a href="https://www.facebook.com/lapotato09/" class="text-light mx-4" target="_blank">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/leogie-dela-64a72218a/" target="_blank" class="text-light mx-4">
+          <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+
+        <a href="https://gitlab.com/leogie.delapena" class="text-light mx-4" target="_blank">
+          <i class="fa fa-gitlab fa-2x"></i>
+        </a>
+        <a href="https://github.com/leogie09" class="text-light mx-4" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+      </div>
+      <div class="text-light text-center mt-3">
+        © Leogie Dela Peña. All rights reserved 2022
+      </div>
+    </div>
+    <!-- END OF FOOTER -->
+
+
+  </div>
+  <!-- END OF MAIN CONTENT -->
+
+  <!-- START OF MODAL SECTION -->
+    <!-- MODAL FOR CONTACT -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for contacting us!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-dark">Message Successfully Sent</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF CONTACT MODAL -->
+
+    <!-- MODAL FOR APPOINTMENT -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="appointmentModal">Creating an appointment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group pb-1 ps-2 pe-2">
+              <label class="pb-2">Full Name</label>
+              <input type="text" name="fullname" class="form-control">
+            </div>
+            <div class="form-group pb-1 ps-2 pe-2">
+              <label class="pb-2">Email</label>
+              <input type="text" name="email" class="form-control">
+            </div>
+            <div class="form-group pb-1 ps-2 pe-2">
+              <label class="pb-2">Contact Number</label>
+              <input type="text" name="contact" class="form-control">
+            </div>
+            <div class="form-group pb-1 ps-2 pe-2">
+              <label class="pb-2">Date:</label>
+              <input type="date" name="date" class="form-control">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#appointmentModalSave">Save</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF MODAL FOR APPOINTMENT -->
+
+    <!-- MODAL FOR SAVING APPOINTMENT -->
+    <div class="modal fade" id="appointmentModalSave" tabindex="-1" aria-labelledby="appointmentModalSaveLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark" id="appointmentModalSaveLabel">Thank you for contacting us!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-dark">Your appointment successfully save.</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF SAVING APPOINTMENT MODAL -->
+  <!-- END OF MODAL SECTION -->
+
 
 
 

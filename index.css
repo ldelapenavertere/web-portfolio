@@ -1,12 +1,40 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-}
+
 
 /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#nav-img {
+  width: 30px;
+  height: 30px;
+}
+
+nav {
+  background-color: #191A24;;
+}
+
+#profile-welcome {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+#profile-name {
+  font-size: 60px;
+  /*color: #F7CB1E;*/
+  color: #ffc107;
+}
+
+#profile-picture {
+  height: 380px;
+  /*width: 500px;*/
+}
+
+.content-section {
+  background-color: #191A24;
 }
 
 .font-awesome {
@@ -17,9 +45,34 @@ body {
 }
 
 .section-head {
-  border-bottom: 5px solid white;
+  border-bottom: 1.5px solid #ffc107;
 }
-/*
-.section-head {
-  border-bottom: 5px solid white;
-}*/
+
+#project-section {
+  /*background-color: #ffc107;*/
+  border-radius: 3px;
+  box-shadow: 0 3px 10px rgb(0, 0, 0 / 0.2);
+}
+
+.card-project {
+  border-top: 3px solid #ffc107;
+}
+
+#project-card {
+  border-top: 5px solid #ffc107;
+  background: linear-gradient( white, #ffc107);
+}
+
+#aboutme-section img {
+  /*height: 270px;*/
+}
+
+.text-container {
+  border-radius: 5px;
+  background-color: rgba(33, 35, 48, 0.5);
+
+}
+
+#tools-section ul{
+  list-style-type: none;
+}
